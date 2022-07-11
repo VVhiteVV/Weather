@@ -1,0 +1,45 @@
+.Card {
+  cursor: pointer;
+}
+.Card__data {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "left left right right" "left left right right" "bottom bottom bottom bottom";
+  width: 250px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  list-style: none;
+}
+.Card__leftData {
+  grid-area: left;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Card__Temp {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: " . . max max " " min min . . ";
+}
+.Card__maxT {
+  grid-area: max;
+}
+.Card__minT {
+  grid-area: min;
+}
+.Card__rightData {
+  grid-area: right;
+  display: flex;
+  justify-content: end;
+}
+.Card__bottomData {
+  grid-area: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=Card.css.map */

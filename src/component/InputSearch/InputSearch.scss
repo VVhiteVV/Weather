@@ -1,0 +1,30 @@
+.InputSearch{
+  background-color: #0099FF;
+  width: 100%;
+  height: 50px;
+  padding: 0px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  align-items: center;
+  &__input{
+    margin: 0px 10px 0px 0px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 5px;
+  }
+  &__button{
+    color: white;
+    background-color: #7FCCFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: pointer;
+  }
+  &__city{
+    color: white;
+    font-weight: bold;
+  }
+}
